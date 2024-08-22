@@ -1,127 +1,156 @@
-/* Estilo global */
-*{
+      /* Estilo global */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradiente dark blue */
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Fonte Bebas Neue */
     .bebas-neue-regular {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-style: normal;
-      }
-      
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradiente dark blue */
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+    }
 
-/* Estilo da barra de navegação */
-.nav_bar {
-    background-color: #172f47;
-    padding: 1em 0;
-}
+    /* Estilo da barra de navegação */
+    .nav_bar {
+        background-color: #172f47;
+        padding: 1em 0;
+    }
 
-.nav_menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: center; /* Centraliza e distribui os menus */
-    margin: 0;
-    padding: 0;
-}
+    .nav_menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: center; /* Centraliza e distribui os menus */
+        margin: 0;
+        padding: 0;
+    }
 
-.nav_menu li {
-    margin: 0 15px; /* Espaçamento entre os itens */
-}
+    .nav_menu li {
+        margin: 0 15px; /* Espaçamento entre os itens */
+    }
 
-.nav_menu a {
-    color: #5606e98c;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    padding: 8px 16px;
-    transition: background-color 0.2s ease;
+    .nav_menu a {
+        color: #5606e98c;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        padding: 8px 16px;
+        transition: background-color 0.2s ease;
+    }
 
-}
-.nav_menu a:hover {
-    background-color: #032d57; /* Cor de hover nos botões de navegação */
-    border-radius: 25px 0 25px 0; /* Borda arredondada no hover */
-    color: white;
-    border: 0.5px solid goldenrod;
-}
+    .nav_menu a:hover {
+        background-color: #032d57; /* Cor de hover nos botões de navegação */
+        border-radius: 25px 0 25px 0; /* Borda arredondada no hover */
+        color: white;
+        border: 0.5px solid goldenrod;
+    }
 
-/* Estilo do conteúdo principal */
-.site-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2em;
-}
+    /* Estilo do conteúdo principal */
+    .site-main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2em;
+    }
 
-.page-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+    .page-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
 
-.page-description {
-    font-size: 18px;
-    max-width: 600px;
-}
+    .page-description {
+        font-size: 18px;
+        max-width: 600px;
+    }
 
-/* Estilo do formulário */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
+    /* Estilo do formulário */
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
 
-.form-label {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
+    .form-label {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
 
-.form-input,
-.form-textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
+    .form-input,
+    .form-textarea {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
 
-.form-textarea {
-    height: 150px;
-}
+    .form-textarea {
+        height: 150px;
+    }
 
-.form-button {
-    background-color: #345678;
-    color: #fcf6f6;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px 0 8px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    .form-button {
+        background-color: #345678;
+        color: #fcf6f6;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 12px 0 8px 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-.form-button:hover {
-    background-color: #456789;
-}
+    .form-button:hover {
+        background-color: #456789;
+    }
 
-/* Estilo do footer */
-.site-footer {
-    background-color: #1a2a3a;
-    padding: 1em;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    color: #ffffff;
-}
+    /* Estilo do footer */
+    .site-footer {
+        background-color: #1a2a3a;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .nav_menu {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav_menu li {
+            margin: 10px 0; /* Ajusta o espaçamento vertical */
+        }
+
+        .site-main {
+            padding: 1em;
+        }
+
+        .page-title {
+            font-size: 28px;
+        }
+
+        .page-description {
+            font-size: 16px;
+        }
+    }
