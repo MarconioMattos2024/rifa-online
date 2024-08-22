@@ -1,4 +1,12 @@
 /* Estilo global */
+*{
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,7 +20,7 @@ body {
 
 /* Estilo da barra de navegação */
 .nav_bar {
-    background-color: #1a2a3a;
+    background-color: #172f47;
     padding: 1em 0;
 }
 
@@ -29,16 +37,20 @@ body {
 }
 
 .nav_menu a {
-    color: #ffffff;
+    color: #5606e98c;
+    font-weight: bold;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     padding: 8px 16px;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.2s ease;
 
+}
 .nav_menu a:hover {
-    background-color: #345678; /* Cor de hover nos botões de navegação */
-    border-radius: 4px; /* Borda arredondada no hover */
+    background-color: #032d57; /* Cor de hover nos botões de navegação */
+    border-radius: 25px 0 25px 0; /* Borda arredondada no hover */
+    color: white;
+    border: 0.5px solid goldenrod;
 }
 
 /* Estilo do conteúdo principal */
@@ -91,10 +103,10 @@ body {
 
 .form-button {
     background-color: #345678;
-    color: #ffffff;
+    color: #fcf6f6;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px 0 8px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
