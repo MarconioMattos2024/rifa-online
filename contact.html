@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Meu Site</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header class="site-header">
+        <nav class="nav_bar">
+            <ul class="nav_menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre Nós</a></li>
                 <li><a href="products.html">Produtos</a></li>
@@ -17,25 +17,25 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Contato</h1>
-            <p>Entre em contato conosco através do formulário abaixo:</p>
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name">
+    <main class="site-main">
+        <section class="content-section">
+            <h1 class="page-title">Contato</h1>
+            <p class="page-description">Entre em contato conosco através do formulário abaixo:</p>
+            <form class="contact-form">
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" id="name" name="name" class="form-input">
                 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input">
                 
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message"></textarea>
+                <label for="message" class="form-label">Mensagem:</label>
+                <textarea id="message" name="message" class="form-textarea"></textarea>
                 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="form-button">Enviar</button>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
     </footer>
 </body>

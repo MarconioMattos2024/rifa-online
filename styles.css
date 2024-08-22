@@ -1,48 +1,115 @@
-*{
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: #f4f4f4;
-}
-
-header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradiente dark blue */
+    color: #ffffff;
     display: flex;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    background-color: #3333;
-    color: #fff;
-    padding: 10px 0;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-nav ul {
-    list-style: none;
+/* Estilo da barra de navegação */
+.nav_bar {
+    background-color: #1a2a3a;
+    padding: 1em 0;
+}
+
+.nav_menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centraliza e distribui os menus */
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.nav_menu li {
+    margin: 0 15px; /* Espaçamento entre os itens */
 }
 
-nav ul li a {
-    color: #fff;
+.nav_menu a {
+    color: #ffffff;
     text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
 }
 
-main {
-    padding: 20px;
-    background: #fff;
+.nav_menu a:hover {
+    background-color: #345678; /* Cor de hover nos botões de navegação */
+    border-radius: 4px; /* Borda arredondada no hover */
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+/* Estilo do conteúdo principal */
+.site-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 2em;
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.page-description {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+/* Estilo do formulário */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form-input,
+.form-textarea {
     width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    height: 150px;
+}
+
+.form-button {
+    background-color: #345678;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #456789;
+}
+
+/* Estilo do footer */
+.site-footer {
+    background-color: #1a2a3a;
+    padding: 1em;
+    text-align: center;
+    position: relative;
     bottom: 0;
+    width: 100%;
+    color: #ffffff;
 }
