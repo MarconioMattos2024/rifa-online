@@ -3,33 +3,42 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        .ubuntu-light {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
     }
 
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradiente dark blue */
-        color: #ffffff;
+        background: linear-gradient(to right, #2097ca, #94d0e4, #2c5364); /* Gradiente dark blue */
+        color: #302f2f;
         display: flex;
         flex-direction: column;
+        font-weight: bold;
         min-height: 100vh;
     }
 
-    /* Fonte Bebas Neue */
-    .bebas-neue-regular {
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    .desc_lateral{
+        width: 300px;
+        height: 100vh;
+        padding: 20px;
+        background-color: #f0f0f0;
     }
+
 
     /* Estilo da barra de navegação */
     .nav_bar {
-        background-color: #172f47;
+        background: linear-gradient(to right, #2097ca, #94d0e4, #2c5364); /* Gradiente dark blue */
         padding: 1em 0;
+        border: 1px solid palevioletred;
     }
 
     .nav_menu {
+
         list-style-type: none;
         display: flex;
         justify-content: center; /* Centraliza e distribui os menus */
@@ -42,7 +51,7 @@
     }
 
     .nav_menu a {
-        color: #5606e98c;
+        color: #1c0a3dcc;
         font-weight: bold;
         text-decoration: none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -53,14 +62,15 @@
 
     .nav_menu a:hover {
         background-color: #032d57; /* Cor de hover nos botões de navegação */
-        border-radius: 25px 0 25px 0; /* Borda arredondada no hover */
+        border-radius: 25px; /* Borda arredondada no hover */
         color: white;
-        border: 0.5px solid goldenrod;
+        border: 0.5px solid rgb(237, 237, 240);
     }
 
     /* Estilo do conteúdo principal */
     .site-main {
-        flex: 1;
+        margin-left: 47vh;
+        border: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -75,6 +85,8 @@
 
     .page-description {
         font-size: 18px;
+        font-weight: bold;
+        color: rgb(52, 54, 83);
         max-width: 600px;
     }
 
